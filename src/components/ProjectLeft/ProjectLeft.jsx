@@ -28,7 +28,7 @@ class ProjectLeft extends Component{
                                     <a className='link' href={this.props.url} target="_blank">Check it out here</a>
                                     {(this.props.git !== '') ? 
                                         
-                                        <a className='' href={this.props.git} target="_blank"><i class="fab fa-git-square"></i></a>
+                                        <a className='' href={this.props.git} target="_blank"><i className="fab fa-git-square"></i></a>
                                     :
                                         null
                                     }
