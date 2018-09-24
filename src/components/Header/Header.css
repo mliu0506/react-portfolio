@@ -8,8 +8,8 @@ header{
     min-height: 102vh;
 }
 .headshot{
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     border-radius: 50%;
     margin: 20px;
     border: 1px solid white;
@@ -28,4 +28,6 @@ header{
     min-height: 100%;
     width: auto;
     height: auto;
+    overflow: hidden; 
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   }

@@ -23,8 +23,8 @@ class Header extends Component{
         return(
             <header className="head vh-102 text-white">
                 <div className="row vh-102 justify-content-center align-items-center">
-                <video autoPlay loop muted id="main-video">
-                    <source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1536570114/samples/elephants.mp4" type="video/mp4"></source>
+                <video playsInline autoPlay loop muted id="main-video" >
+                    <source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1537781726/elephants-bg.mp4" type="video/mp4"></source>
                 </video>
 
                     <div className="head-content text-center mx-auto col">
