@@ -11,10 +11,10 @@ class About extends Component{
                     <div className="row">
                         <div className="col-md-12">
                             <div>
-                                <h2 className="text-center">About Me</h2>
+                                <h2 className="text-center highlight">About Me</h2>
                                 <p className='text-center'>
                                 
-                                Has over 10 years experience in successful IT system implementation, working for multinational Financial and Insurance Corporation.
+                                Over 10 years experience in successful IT system implementation, working for multinational Financial and Insurance Corporation.
                                 
                                 Has a Bachelor of Electronic Engineering, Computer Science, and graduated in University of Toronto's Coding Boot Camp specializing in Full Stack (includes HTML5, CSS3, Bootstrap4, JavaScript, Jquery, Node.jS, Express.js, React.js, .Net, Java, Firebase, MongoDB, MySQL, Oracle, etc.)
                                 

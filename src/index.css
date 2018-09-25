@@ -22,6 +22,7 @@ a:hover{
   color: #EFDA5B;
   text-decoration: none;
 }
+
 .d-contents{
   display: contents !important;
 }
@@ -87,8 +88,18 @@ a:hover{
     list-style: none;
   }
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
   .skills{
     text-align: center;
   }
+  .font-ezcar{
+    font-size: 1.3em !important;
+  }
+  .text-center{
+    font-size: 0.8em !important;
+  }
+  .highlight{
+    font-size:1.8em !important;
+  }
+
 }

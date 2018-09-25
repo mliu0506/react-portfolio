@@ -4,6 +4,8 @@ import $ from 'jquery';
 import HeadShot from '../../assets/images/michael.jpg';
 
 
+
+
 const style = {
     name: {
         fontSize: '60px'
@@ -11,20 +13,44 @@ const style = {
     label: {
         fontSize: '24px'
     }
+    
 }
 
 class Header extends Component{
+    state = { width: 0};
+
 
     componentDidMount(){
         $('.head-content').hide();
         $('.head-content').fadeIn(2200);
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
     }
+    
+    updateWindowDimensions = ()=> {
+        this.setState ({ width: window.innerWidth});
+    }
+
+    componentWillUnmount() {
+        this.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+
     render(){
         return(
             <header className="head vh-102 text-white">
                 <div className="row vh-102 justify-content-center align-items-center">
-                <video playsInline autoPlay loop muted id="main-video" >
-                    <source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1537781726/elephants-bg.mp4" type="video/mp4"></source>
+                <video playsInline autoPlay loop muted id="main-video" controls>
+                {
+                   
+                    (this.state.width < 768 ) ? (<source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1537825202/waterfall-bg.mp4" type="video/mp4" media="all and (max-width: 568px)"></source>) 
+                    :
+                    (<source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1537781726/elephants-bg.mp4" type="video/mp4"></source>)
+                }
+                                  
+                    
+
+
                 </video>
 
                     <div className="head-content text-center mx-auto col">

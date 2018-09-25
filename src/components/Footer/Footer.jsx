@@ -10,7 +10,7 @@ class Footer extends Component{
                     <div className="row">
                         <div className="col-md-12">
                             <div>
-                                <h2 className='text-center'>Contact</h2>
+                                <h2 className='text-center highlight'>Contact</h2>
                                 <p className='text-center mb-12'>Have a project you need help on? Feel free to contact me and we'll see if we can work something out. Thanks!</p>
                                 <div className='text-center'>
                                     <a href="mailto:michaelliu56@gmail.com" className="mx-auto link">michaelliu56@gmail.com</a>
