@@ -43,7 +43,7 @@ class Header extends Component{
                 <video playsInline autoPlay loop muted id="main-video" controls>
                 {
                    
-                    (this.state.width < 768 ) ? (<source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1537825202/waterfall-bg.mp4" type="video/mp4" media="all and (max-width: 568px)"></source>) 
+                    (this.state.width < 768 ) ? (<source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1537825202/waterfall-bg.mp4" type="video/mp4"></source>) 
                     :
                     (<source src="https://res.cloudinary.com/dvp0y7ati/video/upload/v1538008423/elephants-bg.mp4" type="video/mp4"></source>)
                 }
